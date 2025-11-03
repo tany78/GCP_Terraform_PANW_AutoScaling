@@ -54,6 +54,7 @@
   - `roles/monitoring.metricWriter`, `roles/monitoring.viewer`.
 
 ### MIG Instance Template Metadata (used by autoscale module)
+Pre-requiste : To configure Bootstrap parameters Panorama should be deployed and configured.
 - Bootstrap and registration keys:
   - `panorama-server`: Panorama address for registration.
   - `vm-auth-key`: Panorama VM auth key.
