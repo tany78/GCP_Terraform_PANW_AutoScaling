@@ -1,4 +1,4 @@
-# GCP Perimeter Firewall & Autoscale Stack
+# GCP PANW Perimeter Firewall with MIG AutoScaling
 
 ## 1) Project Scope and Outcome
 
