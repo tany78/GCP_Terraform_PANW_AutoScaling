@@ -82,15 +82,9 @@
   - Metadata‑only bootstrap:
     - Core bootstrap parameters are provided via instance metadata (e.g., `panorama-server`, `vm-auth-key`, `tplname`, `dgname`, `authcodes`).
     - Useful for lightweight setups or when GCS access is restricted.
-- Typical file set in `./bootstrap/config/`:
+- Bucket-based approach Typical file set in `./bootstrap/config/`:
   - `init-cfg.txt`: Device bootstrap including mgmt config, Panorama, and registration settings.
   - `bootstrap.xml`: Base configuration (interfaces, zones, policies) tailored to the three‑VPC topology.
-- Workflow:
-  1. Create networks/subnets and IAM service account.
-  2. Deploy autoscale module with the MIG and named port for health checks.
-  3. Configure VPC firewall rules for mgmt, health checks (trust/untrust), ingress data path, and app access.
-  4. Optionally deploy Panorama and set registration metadata.
-  5. Validate external and internal LB health; test traffic using `private-test-vm`.
 
 ## 4) Panorama GCP Plugin Configuration
 
